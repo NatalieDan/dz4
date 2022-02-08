@@ -47,6 +47,19 @@ public class OwnLinkedList<T> {
         size++;
     }
 
+    public void deleteNode(int index){
+        if (index > size){
+            System.out.println("Такого элемента нет");
+            return;
+        }
+        Node current = head;
+        for (int i = 0; i < index-1; i++){
+            current = current.next;
+        }
+        current.next = current.next.next;
+        size--;
+    }
+
     public void display(){
         Node current = head;
         if (head == null){

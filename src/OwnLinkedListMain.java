@@ -7,7 +7,11 @@ public class OwnLinkedListMain {
         integerOwnLinkedList.addNode(368);
         integerOwnLinkedList.addNode(124);
         integerOwnLinkedList.addNode(750);
-        integerOwnLinkedList.addNode(1111111,4);
+        integerOwnLinkedList.addNode(1111111,3);
+        integerOwnLinkedList.display();
+        System.out.println();
+
+        integerOwnLinkedList.deleteNode(5);
         integerOwnLinkedList.display();
     }
 }
